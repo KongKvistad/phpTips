@@ -1,3 +1,14 @@
+STRATEGI FOR OPPGAVEN:
+
+1: modeller "databasen" din. den skal være normalisert. tenk konseptuell modellering slik man lærte i database-faget;
+
+2: lær å lese / skrive til csv. se snippets under / google "working with csv in php" eller lignende.
+
+3: du bør ha en klasse eller i det minste en funksjon som konverterer csv-data til en nested array i PHP.
+da er det lettere å jobbe med.
+
+
+
 <?php
 
 //enkelt lese fra csv fil
