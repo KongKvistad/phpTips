@@ -25,24 +25,23 @@ da er det lettere å jobbe med.
 
 //convertere til assoc array og stappe alt i et "parent-array"
 
-$parentArr = [];
-// applies str_getcsv to every single line in the file 
-$rows = array_map('str_getcsv', file('./cars.csv'));
+// $parentArr = [];
+// // applies str_getcsv to every single line in the file 
+// $rows = array_map('str_getcsv', file('./cars.csv'));
 
-//pops element at index 0
-$header = array_shift($rows);
+// //pops element at index 0
+// $header = array_shift($rows);
 
-foreach($rows as $row) {
-    array_push($parentArr, array_combine($header, $row));
-}
+// foreach($rows as $row) {
+//     array_push($parentArr, array_combine($header, $row));
+// }
 
-foreach($parentArr as $key => $value){
-    print_r($value);
-    echo "<br>";
-}
+// foreach($parentArr as $key => $value){
+//     print_r($value);
+//     echo "<br>";
+// }
 
 
-array_map("print_r",$parentArr);
 
 
 ?>
