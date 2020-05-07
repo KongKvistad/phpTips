@@ -18,25 +18,20 @@ include_once("./dataframe.php");
 
 
 
-$owners = dataFrame("./owner.csv");
-$cars = dataFrame("./cars.csv");
+$cars = new DataFrame("./cars.csv");
+
+$owners = new DataFrame("./owner.csv");
+
+$ownerData = $owners->data;
+$carData = $cars->data;
 
 
-$result = getMatch("carnum", $owners, $cars);
+$cars->validateKey("28", $carData, $ownerData);
 
 
 
 
 
-//$final = array_combine($header, $row);
-
-
-// foreach($cars as $car){
-//     foreach($owners as $owner)
-//     {
-
-//     }
-// }
 
 
 //print_r($rows);
